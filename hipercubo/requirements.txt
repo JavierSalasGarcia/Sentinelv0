@@ -1,0 +1,22 @@
+# ── Core ──────────────────────────────────────────────────────────────────
+numpy>=1.24
+h5py>=3.8
+netCDF4>=1.6
+psutil>=5.9
+
+# ── Geoespacial ──────────────────────────────────────────────────────────
+# GDAL se instala mejor vía conda:
+#   conda install -c conda-forge gdal
+# Si se usa pip:
+#   pip install gdal==$(gdal-config --version)
+
+# ── MintPy ────────────────────────────────────────────────────────────────
+# Instalación recomendada:
+#   conda install -c conda-forge mintpy
+# O desde fuente:
+#   pip install mintpy
+mintpy>=1.5
+
+# ── Snappy (ESA SNAP Python API) ─────────────────────────────────────────
+# NO se instala via pip. Se configura al instalar ESA SNAP:
+#   <SNAP_DIR>/bin/snappy-conf <python_executable>
