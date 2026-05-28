@@ -1,0 +1,2 @@
+# Runtime dependencies (snappy se instala junto con ESA SNAP, no via pip)
+psutil>=5.9.0
