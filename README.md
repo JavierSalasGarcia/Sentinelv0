@@ -2,6 +2,9 @@
 
 Pipeline automatizado para procesamiento de pares Sentinel-1 SLC (modo IW) y generación de mapas de deformación superficial mediante interferometría diferencial (DInSAR).
 
+> **Primeros pasos:** Ver [GUIA_DESCARGA.md](GUIA_DESCARGA.md) para instrucciones
+> completas de registro, búsqueda, descarga y organización de los insumos.
+
 ## Requisitos
 
 | Componente | Versión mínima | Notas |
