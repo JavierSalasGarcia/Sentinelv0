@@ -15,13 +15,22 @@ Pipeline automatizado para procesamiento de pares Sentinel-1 SLC (modo IW) y gen
 
 ```
 Sentinelv0/
-├── sentinel1_insar_toluca.py   # Script principal del pipeline
-├── config.py                   # Parámetros configurables
+├── sentinel1_insar_toluca.py   # Script principal del pipeline DInSAR
+├── config.py                   # Parámetros configurables (AOI, sub-swath, looks…)
 ├── requirements.txt
-└── README.md
+├── README.md
+└── hipercubo/                  # Pipeline de series temporales SBAS + cubo 3D
+    ├── run_pipeline.py         # Orquestador completo (punto de entrada)
+    ├── dim_to_hdf5.py          # Etapa 1: BEAM-DIMAP → HDF5 por par
+    ├── mintpy_sbas.py          # Etapa 2: red SBAS + inversión MintPy
+    ├── build_hypercube.py      # Etapa 3: cubo 3D NetCDF-4 georreferenciado
+    ├── validate_pair.py        # Validación: resta de épocas → GeoTIFF
+    ├── requirements.txt        # Dependencias del módulo hipercubo
+    └── README.md               # Documentación detallada del hipercubo
 ```
 
-Todos los resultados se guardan en `D:/Toluca/`.
+Todos los resultados del pipeline DInSAR se guardan en `D:/Toluca/`.  
+Los resultados del hipercubo se guardan en `D:/Toluca/hipercubo/`.
 
 ## Flujo de trabajo
 
@@ -84,6 +93,56 @@ python sentinel1_insar_toluca.py
 ```
 
 El progreso se registra en `D:/Toluca/insar_pipeline.log` y en consola.
+
+---
+
+## Módulo Hipercubo – Series temporales SBAS
+
+Una vez generados los archivos `.dim` de desplazamiento, el módulo `hipercubo/` realiza la inversión SBAS con MintPy y construye un cubo 3D de deformación acumulada.
+
+### Flujo hipercubo
+
+```
+*_Disp_TC.dim  (D:/Toluca/)
+      ↓  dim_to_hdf5.py
+mintpy_inputs/YYYYMMDD_YYYYMMDD.h5   ← desplazamiento + coherencia por par
+      ↓  mintpy_sbas.py
+mintpy_ts/ifgramStack.h5             ← stack SBAS (fase + coherencia)
+mintpy_ts/timeseries.h5              ← serie temporal de deformación
+      ↓  build_hypercube.py
+hipercubo/deformation_cube.nc        ← cubo (X=Lon, Y=Lat, Z=Tiempo) [m]
+      ↓  validate_pair.py
+hipercubo/diff_YYYYMMDD_YYYYMMDD.tif ← diferencia entre 2 fechas (GeoTIFF)
+```
+
+### Estructura del cubo NetCDF-4
+
+| Dimensión | Contenido |
+|---|---|
+| `time` | Días desde la primera adquisición |
+| `lat`  | Latitud WGS-84 (19.05° – 19.58° N) |
+| `lon`  | Longitud WGS-84 (−99.90° – −99.32° O) |
+| `displacement` | Desplazamiento LOS acumulado [m] |
+
+CRS: **EPSG:4326** (WGS-84), convención CF-1.8, compresión gzip.
+
+### Requisitos adicionales
+
+```bash
+conda install -c conda-forge gdal netcdf4 h5py mintpy
+```
+
+### Uso del hipercubo
+
+```bash
+# Pipeline completo
+python hipercubo/run_pipeline.py --toluca-dir D:/Toluca
+
+# Validación: diferencia entre dos épocas → GeoTIFF
+python hipercubo/validate_pair.py --date1 2019-08-31 --date2 2020-02-15
+```
+
+Ver `hipercubo/README.md` para documentación completa de cada módulo.
 
 ## Gestión de memoria
 
