@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Toluca – Pozos y Grietas</name>
-    <description>Pozos de extracción de agua subterránea y grietas en el suelo digitalizados desde cartografía impresa de Toluca de Lerdo, Estado de México. Coordenadas aproximadas; validar con levantamiento GPS.</description>
-    <Style id="estilo_pozo">
+    <name>Toluca – Pozos, Grietas y Fallas</name>
+    <description>Datos geoestructurales de Toluca de Lerdo, Estado de México.
+Fuentes: mapa impreso de pozos/grietas + SGM E14-2 / INEGI / CENAPRED / Sociedad Mexiquense de Geotecnia (levantamiento 29-May-2026).
+Proyección: UTM Zona 14N / WGS84. Coordenadas digitalizadas manualmente.</description>
+    <Style id="s_pozo">
       <IconStyle>
         <color>ffff0000</color>
         <scale>1.1</scale>
@@ -15,382 +17,418 @@
         <scale>0.8</scale>
       </LabelStyle>
     </Style>
-    <Style id="estilo_grieta">
+    <Style id="s_grieta_pv">
+      <IconStyle>
+        <color>ff00aa00</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.8</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="s_falla_pv">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.8</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="s_grieta_m1">
       <LineStyle>
         <color>ff00ffff</color>
         <width>3</width>
       </LineStyle>
     </Style>
+    <Style id="s_falla_roja">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="s_falla_smg">
+      <LineStyle>
+        <color>ffff00ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
     <Folder>
-      <name>Pozos de extracción</name>
+      <name>Pozos de extracción (Mapa 1)</name>
       <visibility>1</visibility>
       <Placemark>
         <name>Pozo-01</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 430650  N: 2141900</description>
+UTM 14N  E:430650  N:2141900</description>
         <Point>
           <coordinates>-99.6603699,19.3699954,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-02</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 431400  N: 2141600</description>
+UTM 14N  E:431400  N:2141600</description>
         <Point>
           <coordinates>-99.6532177,19.3673101,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-03</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 431950  N: 2141700</description>
+UTM 14N  E:431950  N:2141700</description>
         <Point>
           <coordinates>-99.6479843,19.3682325,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-04</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432400  N: 2141550</description>
+UTM 14N  E:432400  N:2141550</description>
         <Point>
           <coordinates>-99.6436942,19.3668922,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-05</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432800  N: 2141800</description>
+UTM 14N  E:432800  N:2141800</description>
         <Point>
           <coordinates>-99.6398944,19.3691648,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-06</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433200  N: 2141650</description>
+UTM 14N  E:433200  N:2141650</description>
         <Point>
           <coordinates>-99.6360804,19.3678226,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-07</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433700  N: 2141400</description>
+UTM 14N  E:433700  N:2141400</description>
         <Point>
           <coordinates>-99.6313109,19.3655800,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-08</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 434050  N: 2141600</description>
+UTM 14N  E:434050  N:2141600</description>
         <Point>
           <coordinates>-99.6279852,19.3673989,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-09</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 434500  N: 2141350</description>
+UTM 14N  E:434500  N:2141350</description>
         <Point>
           <coordinates>-99.6236918,19.3651544,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-10</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432100  N: 2140700</description>
+UTM 14N  E:432100  N:2140700</description>
         <Point>
           <coordinates>-99.6465205,19.3592008,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-11</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432600  N: 2140800</description>
+UTM 14N  E:432600  N:2140800</description>
         <Point>
           <coordinates>-99.6417634,19.3601213,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-12</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433050  N: 2140500</description>
+UTM 14N  E:433050  N:2140500</description>
         <Point>
           <coordinates>-99.6374683,19.3574254,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-13</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433450  N: 2140700</description>
+UTM 14N  E:433450  N:2140700</description>
         <Point>
           <coordinates>-99.6336668,19.3592460,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-14</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433800  N: 2140400</description>
+UTM 14N  E:433800  N:2140400</description>
         <Point>
           <coordinates>-99.6303240,19.3565465,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-15</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 434200  N: 2140550</description>
+UTM 14N  E:434200  N:2140550</description>
         <Point>
           <coordinates>-99.6265207,19.3579152,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-16</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 434550  N: 2140300</description>
+UTM 14N  E:434550  N:2140300</description>
         <Point>
           <coordinates>-99.6231797,19.3556674,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-17</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 431800  N: 2139900</description>
+UTM 14N  E:431800  N:2139900</description>
         <Point>
           <coordinates>-99.6493482,19.3519613,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-18</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432250  N: 2140000</description>
+UTM 14N  E:432250  N:2140000</description>
         <Point>
           <coordinates>-99.6450674,19.3528802,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-19</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432750  N: 2139800</description>
+UTM 14N  E:432750  N:2139800</description>
         <Point>
           <coordinates>-99.6402999,19.3510896,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-20</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433200  N: 2139950</description>
+UTM 14N  E:433200  N:2139950</description>
         <Point>
           <coordinates>-99.6360209,19.3524601,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-21</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433700  N: 2139700</description>
+UTM 14N  E:433700  N:2139700</description>
         <Point>
           <coordinates>-99.6312517,19.3502175,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-22</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 434150  N: 2139850</description>
+UTM 14N  E:434150  N:2139850</description>
         <Point>
           <coordinates>-99.6269726,19.3515878,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-23</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 431600  N: 2139100</description>
+UTM 14N  E:431600  N:2139100</description>
         <Point>
           <coordinates>-99.6512237,19.3447251,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-24</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432100  N: 2139200</description>
+UTM 14N  E:432100  N:2139200</description>
         <Point>
           <coordinates>-99.6464671,19.3456457,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-25</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432700  N: 2139000</description>
+UTM 14N  E:432700  N:2139000</description>
         <Point>
           <coordinates>-99.6407478,19.3438585,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-26</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433300  N: 2139100</description>
+UTM 14N  E:433300  N:2139100</description>
         <Point>
           <coordinates>-99.6350390,19.3447822,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-27</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433800  N: 2138900</description>
+UTM 14N  E:433800  N:2138900</description>
         <Point>
           <coordinates>-99.6302719,19.3429914,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-28</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 434300  N: 2138800</description>
+UTM 14N  E:434300  N:2138800</description>
         <Point>
           <coordinates>-99.6255083,19.3421041,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-29</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 430950  N: 2137700</description>
+UTM 14N  E:430950  N:2137700</description>
         <Point>
           <coordinates>-99.6573613,19.3320514,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-30</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 431600  N: 2137500</description>
+UTM 14N  E:431600  N:2137500</description>
         <Point>
           <coordinates>-99.6511664,19.3302662,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-31</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432200  N: 2137600</description>
+UTM 14N  E:432200  N:2137600</description>
         <Point>
           <coordinates>-99.6454582,19.3311902,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-32</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432800  N: 2137400</description>
+UTM 14N  E:432800  N:2137400</description>
         <Point>
           <coordinates>-99.6397394,19.3294030,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-33</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 433400  N: 2137550</description>
+UTM 14N  E:433400  N:2137550</description>
         <Point>
           <coordinates>-99.6340329,19.3307785,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-34</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 434000  N: 2137300</description>
+UTM 14N  E:434000  N:2137300</description>
         <Point>
           <coordinates>-99.6283125,19.3285390,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-35</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 430400  N: 2136500</description>
+UTM 14N  E:430400  N:2136500</description>
         <Point>
           <coordinates>-99.6625533,19.3211883,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-36</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 431000  N: 2136300</description>
+UTM 14N  E:431000  N:2136300</description>
         <Point>
           <coordinates>-99.6568347,19.3194016,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-37</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 431700  N: 2136400</description>
+UTM 14N  E:431700  N:2136400</description>
         <Point>
           <coordinates>-99.6501751,19.3203292,0.0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
         <name>Pozo-38</name>
-        <styleUrl>#estilo_pozo</styleUrl>
+        <styleUrl>#s_pozo</styleUrl>
         <description>Pozo de extracción de agua subterránea
-UTM 14N  E: 432300  N: 2136200</description>
+UTM 14N  E:432300  N:2136200</description>
         <Point>
           <coordinates>-99.6444566,19.3185421,0.0</coordinates>
         </Point>
       </Placemark>
     </Folder>
     <Folder>
-      <name>Grietas en el suelo</name>
+      <name>Grietas estimadas (Mapa 1)</name>
       <visibility>1</visibility>
       <Placemark>
-        <name>Grieta-01</name>
-        <styleUrl>#estilo_grieta</styleUrl>
-        <description>Par de trazos en X – zona noreste (área de San Lorenzo)</description>
+        <name>G1-01</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
+        <description>Par en X – zona noreste</description>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-99.6660646,19.3654562,0.0 -99.6622706,19.3690848,0.0</coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-02</name>
-        <styleUrl>#estilo_grieta</styleUrl>
-        <description>Par de trazos en X – zona noreste (cruce)</description>
+        <name>G1-02</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
+        <description>Par en X – zona noreste (cruce)</description>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-99.6660793,19.3690709,0.0 -99.6622560,19.3654701,0.0</coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-03</name>
-        <styleUrl>#estilo_grieta</styleUrl>
+        <name>G1-03</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
         <description>Trazo diagonal – norte-centro</description>
         <LineString>
           <tessellate>1</tessellate>
@@ -398,8 +436,8 @@ UTM 14N  E: 432300  N: 2136200</description>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-04</name>
-        <styleUrl>#estilo_grieta</styleUrl>
+        <name>G1-04</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
         <description>Trazo diagonal corto – norte-centro</description>
         <LineString>
           <tessellate>1</tessellate>
@@ -407,26 +445,26 @@ UTM 14N  E: 432300  N: 2136200</description>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-05</name>
-        <styleUrl>#estilo_grieta</styleUrl>
-        <description>Grieta principal NNO-SSE – sector central (Isidro Fabela / Pino Suárez)</description>
+        <name>G1-05</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
+        <description>Grieta principal NNO-SSE – Isidro Fabela / Pino Suárez</description>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-99.6483961,19.3519647,0.0 -99.6480962,19.3483510,0.0 -99.6477964,19.3447373,0.0 -99.6474965,19.3411236,0.0 -99.6471966,19.3375099,0.0 -99.6468968,19.3338962,0.0</coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-06</name>
-        <styleUrl>#estilo_grieta</styleUrl>
-        <description>Par en X – zona suroeste (límite urbano)</description>
+        <name>G1-06</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
+        <description>Par en X – zona suroeste</description>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-99.6683603,19.3446630,0.0 -99.6645668,19.3482916,0.0</coordinates>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-07</name>
-        <styleUrl>#estilo_grieta</styleUrl>
+        <name>G1-07</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
         <description>Par en X – zona suroeste (cruce)</description>
         <LineString>
           <tessellate>1</tessellate>
@@ -434,8 +472,8 @@ UTM 14N  E: 432300  N: 2136200</description>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-08</name>
-        <styleUrl>#estilo_grieta</styleUrl>
+        <name>G1-08</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
         <description>Trazo corto – franja suroeste</description>
         <LineString>
           <tessellate>1</tessellate>
@@ -443,8 +481,8 @@ UTM 14N  E: 432300  N: 2136200</description>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-09</name>
-        <styleUrl>#estilo_grieta</styleUrl>
+        <name>G1-09</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
         <description>Trazo diagonal – zona este</description>
         <LineString>
           <tessellate>1</tessellate>
@@ -452,8 +490,8 @@ UTM 14N  E: 432300  N: 2136200</description>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-10</name>
-        <styleUrl>#estilo_grieta</styleUrl>
+        <name>G1-10</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
         <description>Trazo vertical – zona este</description>
         <LineString>
           <tessellate>1</tessellate>
@@ -461,8 +499,8 @@ UTM 14N  E: 432300  N: 2136200</description>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-11</name>
-        <styleUrl>#estilo_grieta</styleUrl>
+        <name>G1-11</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
         <description>Trazo curvo – extremo sureste</description>
         <LineString>
           <tessellate>1</tessellate>
@@ -470,12 +508,242 @@ UTM 14N  E: 432300  N: 2136200</description>
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Grieta-12</name>
-        <styleUrl>#estilo_grieta</styleUrl>
+        <name>G1-12</name>
+        <styleUrl>#s_grieta_m1</styleUrl>
         <description>Trazo corto – zona norte (Alfredo del Mazo)</description>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>-99.6332396,19.3718992,0.0 -99.6313248,19.3691947,0.0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Grietas verificadas en campo (Mapa 2 – SMG/CENAPRED)</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>PV-Grieta-01</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – borde oeste, sector norte
+UTM 14N  E:430448  N:2132360
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6619459,19.2837777,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-02</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – borde oeste, sector medio
+UTM 14N  E:430448  N:2132155
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6619385,19.2819252,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-03</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – borde oeste, sobre N 2131954
+UTM 14N  E:430448  N:2131968
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6619317,19.2802353,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-04</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – zona centro-sur
+UTM 14N  E:431705  N:2132070
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6499729,19.2812000,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-05</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – zona centro-sur
+UTM 14N  E:431755  N:2131990
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6494942,19.2804787,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-06</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – zona centro-sur
+UTM 14N  E:431800  N:2131905
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6490630,19.2797121,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-07</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – sector norte, junto a falla normal
+UTM 14N  E:432110  N:2133710
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6461768,19.2960340,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-08</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – sector norte
+UTM 14N  E:432450  N:2133725
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6429414,19.2961810,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-09</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – extremo NE del área
+UTM 14N  E:434340  N:2133560
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6249475,19.2947524,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-10</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – borde este, sector medio
+UTM 14N  E:434355  N:2132100
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6247547,19.2815591,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-Grieta-11</name>
+        <styleUrl>#s_grieta_pv</styleUrl>
+        <description>Grieta – borde este, sector sur
+UTM 14N  E:434295  N:2131720
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6253127,19.2781231,0.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Fallas normales verificadas (Mapa 2 – SMG/CENAPRED)</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>PV-FN-01</name>
+        <styleUrl>#s_falla_pv</styleUrl>
+        <description>Falla normal verificada – sector norte
+UTM 14N  E:432200  N:2133760
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6453220,19.2964889,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-FN-02</name>
+        <styleUrl>#s_falla_pv</styleUrl>
+        <description>Falla normal verificada – sector norte
+UTM 14N  E:432380  N:2133755
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6436087,19.2964498,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-FN-03</name>
+        <styleUrl>#s_falla_pv</styleUrl>
+        <description>Falla normal verificada – sector norte
+UTM 14N  E:432540  N:2133745
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6420855,19.2963648,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-FN-04</name>
+        <styleUrl>#s_falla_pv</styleUrl>
+        <description>Falla normal + Extracción de fluidos – NE
+UTM 14N  E:434395  N:2133820
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6244329,19.2971038,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PV-FN-05</name>
+        <styleUrl>#s_falla_pv</styleUrl>
+        <description>Falla normal verificada – borde este
+UTM 14N  E:434350  N:2132095
+Levantamiento: 29-May-2026</description>
+        <Point>
+          <coordinates>-99.6248021,19.2815137,0.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Fallas cartografiadas INEGI/CENAPRED/SGM (Mapa 2)</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>Falla-R01</name>
+        <styleUrl>#s_falla_roja</styleUrl>
+        <description>Falla normal – borde oeste, tendencia NNW-SSE (INEGI/SGM)</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6619294,19.2844104,0.0 -99.6618771,19.2832357,0.0 -99.6618241,19.2818804,0.0 -99.6617700,19.2802539,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Falla-R02</name>
+        <styleUrl>#s_falla_roja</styleUrl>
+        <description>Fallas normales – sector norte, cluster E 432 000-432 600 (CENAPRED)</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6464627,19.2961234,0.0 -99.6448458,19.2964002,0.0 -99.6432274,19.2963156,0.0 -99.6416091,19.2962309,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Falla-R03</name>
+        <styleUrl>#s_falla_roja</styleUrl>
+        <description>Falla normal – extremo NE, tendencia NNE-SSW (INEGI/SGM)</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6262868,19.2965552,0.0 -99.6251399,19.2952939,0.0 -99.6247537,19.2938493,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Falla-R04</name>
+        <styleUrl>#s_falla_roja</styleUrl>
+        <description>Falla normal principal – borde este, tendencia NNW-SSE (SGM/CENAPRED)</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6304237,19.2832566,0.0 -99.6298461,19.2815416,0.0 -99.6293634,19.2797358,0.0 -99.6289765,19.2781105,0.0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Falla cartografiada – Soc. Mexiquense de Geotecnia</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>Falla-SMG-01</name>
+        <styleUrl>#s_falla_smg</styleUrl>
+        <description>Falla SMG – ramal noreste, zona de influencia 500 m</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6595889,19.2940883,0.0 -99.6567326,19.2938275,0.0 -99.6534012,19.2937491,0.0 -99.6505470,19.2940304,0.0 -99.6481695,19.2944907,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Falla-SMG-02</name>
+        <styleUrl>#s_falla_smg</styleUrl>
+        <description>Falla SMG – segmento central (símbolo '(' señalado en imagen)</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6498598,19.2887010,0.0 -99.6496652,19.2876173,0.0 -99.6494705,19.2865336,0.0 -99.6495614,19.2854488,0.0</coordinates>
         </LineString>
       </Placemark>
     </Folder>
