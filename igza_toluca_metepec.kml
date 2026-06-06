@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>IGZA — Zona Conurbada Toluca-Metepec</name>
+    <description>Digitalización cuidadosa del mapa IGZA 'Zonificación Geotécnica Zona Conurbada Toluca-Metepec'.
+Datum: UTM 14Q/ITRF 2008 ≈ UTM 14N/WGS84.
+Anclas verificadas: Lerdo (E430830,N2133078), Paseo Tollocan (N2131377), San Lorenzo Tepaltitlan (E432588,N2134793), Metepec (E436947,N2129521).</description>
+    <Style id="s_pozo">
+      <IconStyle>
+        <color>ffff2200</color>
+        <scale>0.9</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/water.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.7</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="s_grt">
+      <IconStyle>
+        <color>ff22cc22</color>
+        <scale>0.9</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.7</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="s_fn">
+      <IconStyle>
+        <color>ff2244ff</color>
+        <scale>0.9</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.7</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="s_esp">
+      <IconStyle>
+        <color>ff0088ff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/org-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.7</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="s_falla">
+      <LineStyle>
+        <color>ff00ddff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Folder>
+      <name>Fallas y fracturas geológicas (IGZA)</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>IGZA-F01</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Fractura NNO-SSE — segmento N corto, zona Lerdo-San Lorenzo (celda NO, cuadrante superior). Aprox. 400 m al E de Lerdo (E430830), entre N2133800 y N2134200.</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6545699,19.3004322,0.0 -99.6540868,19.2986266,0.0 -99.6534134,19.2968216,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-F02</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Fractura NNO-SSE — segmento corto paralelo a F01, ligeramente al E. Entre N2134000 y N2133600.</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6519947,19.2990859,0.0 -99.6514129,19.2963769,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-F03</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Falla normal principal — segmento LARGO, tendencia NNO-SSE. Es la línea amarilla más prominente del mapa; atraviesa la celda NO de norte a sur. Lerdo (E430830) queda ~700 m al O. Norte ~N2133800, cruza el gridline N2132170, termina ~N2131600.</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6515081,19.2963766,0.0 -99.6507306,19.2923127,0.0 -99.6500465,19.2877967,0.0 -99.6494613,19.2841840,0.0 -99.6488725,19.2796676,0.0 -99.6484811,19.2769579,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-F04</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Falla normal — celda NC, segmento superior. Al O de 'Extracción de fluidos' (E434005 aprox). Tendencia NNO-SSE, longitud ~700 m.</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6367471,19.2941694,0.0 -99.6353090,19.2914633,0.0 -99.6343468,19.2887556,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-F05</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Falla normal — celda NC, segmento inferior / 'Extracción de fluidos' centro. El segundo nodo 'Extracción de fluidos' del mapa está a ~43% del ancho (E432957) y ~52% de la altura (N2132074). Esta línea queda ligeramente al NO de ese punto.</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6395743,19.2869300,0.0 -99.6381362,19.2842239,0.0 -99.6366982,19.2815178,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-F06</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Fractura — flanco O, celda SO. Margen del sistema de fallas de Cacalomacán. ~300-600 m al E del borde O del mapa. N 2132000 a N2130700 (65-82% desde borde N).</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6628655,19.2805211,0.0 -99.6620860,19.2760054,0.0 -99.6614017,19.2714894,0.0 -99.6608199,19.2687805,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-F07</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Fractura — celda SO/SC límite O. Zona Capultitlán O. Aprox. 27-33% del ancho, 68-80% de la altura. Tendencia aproximada NNO-SSE.</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6476158,19.2747017,0.0 -99.6461759,19.2715439,0.0 -99.6447379,19.2688379,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-F08</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Falla normal — celda SC, zona Capultitlán E / San Felipe O. El label 'Falla normal' del sector sur-centro aparece aprox. a 47% del ancho (E433429) y 71% de la altura (N2131163). Esta línea queda ligeramente al NO de ese label.</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6395357,19.2769894,0.0 -99.6376184,19.2733813,0.0 -99.6357047,19.2706769,0.0 -99.6337910,19.2679725,0.0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-F09</name>
+        <styleUrl>#s_falla</styleUrl>
+        <description>Fractura — celda SC, zona central inferior. Aprox. 40-50% del ancho, 70-82% de la altura.</description>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>-99.6414354,19.2760791,0.0 -99.6399939,19.2724693,0.0 -99.6385560,19.2697633,0.0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Pozos de extracción (IGZA)</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>IGZA-P01</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NO norte — periferia N de Toluca
+UTM 14N  E:430600  N:2134100</description>
+        <Point>
+          <coordinates>-99.6605624,19.2995070,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P02</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NO norte — entre Lerdo y San Lorenzo
+UTM 14N  E:431200  N:2134250</description>
+        <Point>
+          <coordinates>-99.6548572,19.3008831,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P03</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NO norte — E de Lerdo, zona N
+UTM 14N  E:431800  N:2134000</description>
+        <Point>
+          <coordinates>-99.6491376,19.2986442,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P04</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NO centro — ~120 m al E de Lerdo
+UTM 14N  E:430950  N:2133500</description>
+        <Point>
+          <coordinates>-99.6572096,19.2940969,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P05</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NO centro — junto a falla F03
+UTM 14N  E:431600  N:2133200</description>
+        <Point>
+          <coordinates>-99.6510125,19.2914080,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P06</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NO NE — borde E de celda NO
+UTM 14N  E:432100  N:2133700</description>
+        <Point>
+          <coordinates>-99.6462716,19.2959433,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P07</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NO sur — zona O, borde N2132170
+UTM 14N  E:430700  N:2132600</description>
+        <Point>
+          <coordinates>-99.6595564,19.2859552,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P08</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NO sur — sobre gridline N2132170
+UTM 14N  E:431400  N:2132450</description>
+        <Point>
+          <coordinates>-99.6528891,19.2846236,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P09</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC norte — cerca de San Lorenzo
+UTM 14N  E:432700  N:2134350</description>
+        <Point>
+          <coordinates>-99.6405840,19.3018374,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P10</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC norte — centro
+UTM 14N  E:433400  N:2134100</description>
+        <Point>
+          <coordinates>-99.6339127,19.2996014,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P11</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC norte — E, cerca borde NE
+UTM 14N  E:434200  N:2134400</description>
+        <Point>
+          <coordinates>-99.6263088,19.3023388,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P12</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC centro-O
+UTM 14N  E:432900  N:2133500</description>
+        <Point>
+          <coordinates>-99.6386506,19.2941628,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P13</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC centro
+UTM 14N  E:433600  N:2133200</description>
+        <Point>
+          <coordinates>-99.6319780,19.2914749,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P14</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC centro-E — zona Extracción
+UTM 14N  E:434400  N:2133600</description>
+        <Point>
+          <coordinates>-99.6243778,19.2951158,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P15</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC sur — borde N2132170
+UTM 14N  E:432600  N:2132700</description>
+        <Point>
+          <coordinates>-99.6414777,19.2869233,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P16</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC sur
+UTM 14N  E:433300  N:2132400</description>
+        <Point>
+          <coordinates>-99.6348053,19.2842355,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P17</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC sur-E
+UTM 14N  E:434100  N:2132700</description>
+        <Point>
+          <coordinates>-99.6272021,19.2869729,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P18</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NC sur — borde E celda
+UTM 14N  E:434700  N:2132350</description>
+        <Point>
+          <coordinates>-99.6214799,19.2838295,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P19</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NE norte — O de la celda
+UTM 14N  E:435200  N:2134200</description>
+        <Point>
+          <coordinates>-99.6167841,19.3005638,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P20</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NE norte — centro
+UTM 14N  E:435900  N:2134000</description>
+        <Point>
+          <coordinates>-99.6101149,19.2987788,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P21</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NE norte — borde E
+UTM 14N  E:436600  N:2134300</description>
+        <Point>
+          <coordinates>-99.6034624,19.3015120,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P22</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NE sur-O
+UTM 14N  E:435400  N:2133100</description>
+        <Point>
+          <coordinates>-99.6148434,19.2906297,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P23</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NE sur
+UTM 14N  E:436100  N:2132700</description>
+        <Point>
+          <coordinates>-99.6081679,19.2870372,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P24</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NE sur-E — próximo a S.Pedro
+UTM 14N  E:436800  N:2133300</description>
+        <Point>
+          <coordinates>-99.6015258,19.2924814,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P25</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda NE sur-E — borde S+E
+UTM 14N  E:436900  N:2132400</description>
+        <Point>
+          <coordinates>-99.6005444,19.2843513,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P26</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SO norte — margen O, zona Grieta
+UTM 14N  E:430500  N:2131800</description>
+        <Point>
+          <coordinates>-99.6614307,19.2787189,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P27</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SO centro
+UTM 14N  E:431100  N:2131400</description>
+        <Point>
+          <coordinates>-99.6557064,19.2751247,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P28</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SO norte-E
+UTM 14N  E:431800  N:2131900</description>
+        <Point>
+          <coordinates>-99.6490628,19.2796669,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P29</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SO sur — próximo a Santiago Tlacotepec
+UTM 14N  E:430800  N:2130600</description>
+        <Point>
+          <coordinates>-99.6585324,19.2678850,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P30</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SO sur-E — zona Capultitlán O
+UTM 14N  E:431600  N:2130300</description>
+        <Point>
+          <coordinates>-99.6509090,19.2652012,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P31</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SC norte-O — sobre Paseo Tollocan
+UTM 14N  E:432700  N:2131700</description>
+        <Point>
+          <coordinates>-99.6404908,19.2778898,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P32</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SC norte — zona Paseo Tollocan
+UTM 14N  E:433500  N:2131500</description>
+        <Point>
+          <coordinates>-99.6328707,19.2761089,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P33</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SC centro-E
+UTM 14N  E:434300  N:2131200</description>
+        <Point>
+          <coordinates>-99.6252472,19.2734241,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P34</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SC sur — zona San Felipe
+UTM 14N  E:432900  N:2130400</description>
+        <Point>
+          <coordinates>-99.6385420,19.2661485,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P35</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SE norte-O — zona Metepec N
+UTM 14N  E:435300  N:2131600</description>
+        <Point>
+          <coordinates>-99.6157445,19.2770711,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P36</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SE norte — zona Metepec
+UTM 14N  E:436100  N:2131200</description>
+        <Point>
+          <coordinates>-99.6081179,19.2734819,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-P37</name>
+        <styleUrl>#s_pozo</styleUrl>
+        <description>Celda SE norte-E — norte de Metepec centro
+UTM 14N  E:436800  N:2131700</description>
+        <Point>
+          <coordinates>-99.6014730,19.2780224,0.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Grietas verificadas (IGZA)</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>IGZA-Grt-01</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia A, extremo N (celda NO)
+UTM 14N  E:431100  N:2134150</description>
+        <Point>
+          <coordinates>-99.6558054,19.2999760,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-02</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia A, sector N
+UTM 14N  E:431200  N:2133900</description>
+        <Point>
+          <coordinates>-99.6548446,19.2977202,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-03</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia A, sector centro
+UTM 14N  E:431400  N:2133600</description>
+        <Point>
+          <coordinates>-99.6529303,19.2950160,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-04</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — junto a falla F03 centro
+UTM 14N  E:431500  N:2133200</description>
+        <Point>
+          <coordinates>-99.6519643,19.2914046,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-05</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — F03 sector S, cruzando N2132170
+UTM 14N  E:431650  N:2132800</description>
+        <Point>
+          <coordinates>-99.6505224,19.2877950,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-06</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — F03 extremo S, celda SO
+UTM 14N  E:431750  N:2132400</description>
+        <Point>
+          <coordinates>-99.6495564,19.2841837,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-07</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia B, celda NC centro-O
+UTM 14N  E:432950  N:2133300</description>
+        <Point>
+          <coordinates>-99.6381677,19.2923571,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-08</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia B, celda NC centro
+UTM 14N  E:433150  N:2132900</description>
+        <Point>
+          <coordinates>-99.6362503,19.2887490,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-09</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — F05, celda NC sur
+UTM 14N  E:432850  N:2132500</description>
+        <Point>
+          <coordinates>-99.6390914,19.2851243,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-10</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia C, borde O-N
+UTM 14N  E:430300  N:2132100</description>
+        <Point>
+          <coordinates>-99.6633449,19.2814230,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-11</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia C, centro
+UTM 14N  E:430380  N:2131700</description>
+        <Point>
+          <coordinates>-99.6625691,19.2778111,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-12</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia C, borde O-S
+UTM 14N  E:430450  N:2131200</description>
+        <Point>
+          <coordinates>-99.6618848,19.2732951,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-13</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia D, Capultitlán O
+UTM 14N  E:432000  N:2131200</description>
+        <Point>
+          <coordinates>-99.6471346,19.2733479,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-14</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia D, Capultitlán-San Felipe
+UTM 14N  E:432700  N:2131300</description>
+        <Point>
+          <coordinates>-99.6404768,19.2742750,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-Grt-15</name>
+        <styleUrl>#s_grt</styleUrl>
+        <description>Grieta — Familia D, San Felipe O
+UTM 14N  E:433100  N:2131000</description>
+        <Point>
+          <coordinates>-99.6366598,19.2715773,0.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Fallas normales verificadas (IGZA)</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>IGZA-FN-01</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — Familia A, extremo N
+UTM 14N  E:431050  N:2134300</description>
+        <Point>
+          <coordinates>-99.6562867,19.3013298,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-FN-02</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — Familia A, sector N
+UTM 14N  E:431300  N:2134050</description>
+        <Point>
+          <coordinates>-99.6538982,19.2990791,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-FN-03</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — Familia A, sector centro-N
+UTM 14N  E:431480  N:2133750</description>
+        <Point>
+          <coordinates>-99.6521743,19.2963742,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-FN-04</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — F03 sector norte
+UTM 14N  E:431600  N:2133400</description>
+        <Point>
+          <coordinates>-99.6510197,19.2932154,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-FN-05</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — F03 sector centro
+UTM 14N  E:431700  N:2132950</description>
+        <Point>
+          <coordinates>-99.6500519,19.2891522,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-FN-06</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — Familia B, celda NC O
+UTM 14N  E:433000  N:2133450</description>
+        <Point>
+          <coordinates>-99.6376971,19.2937142,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-FN-07</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — Familia B, celda NC centro
+UTM 14N  E:433400  N:2133050</description>
+        <Point>
+          <coordinates>-99.6338762,19.2901128,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-FN-08</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — celda NC este
+UTM 14N  E:434200  N:2132900</description>
+        <Point>
+          <coordinates>-99.6262573,19.2887835,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-FN-09</name>
+        <styleUrl>#s_fn</styleUrl>
+        <description>Falla normal — Familia D, zona San Felipe
+UTM 14N  E:433200  N:2131600</description>
+        <Point>
+          <coordinates>-99.6357291,19.2770027,0.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Puntos especiales — extracción / compactación (IGZA)</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>IGZA-ESP-01</name>
+        <styleUrl>#s_esp</styleUrl>
+        <description>Extracción de fluidos (sector N, celda NC)
+UTM 14N  E:434005  N:2133130</description>
+        <Point>
+          <coordinates>-99.6281210,19.2908556,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-ESP-02</name>
+        <styleUrl>#s_esp</styleUrl>
+        <description>Extracción de fluidos (sector centro, celda NC)
+UTM 14N  E:433213  N:2132122</description>
+        <Point>
+          <coordinates>-99.6356236,19.2817204,0.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>IGZA-ESP-03</name>
+        <styleUrl>#s_esp</styleUrl>
+        <description>Procesos de compactación de suelos (celda NC NE)
+UTM 14N  E:434365  N:2133226</description>
+        <Point>
+          <coordinates>-99.6246981,19.2917349,0.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
